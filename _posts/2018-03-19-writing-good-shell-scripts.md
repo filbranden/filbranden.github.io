@@ -4,8 +4,6 @@ title: Writing Good Shell Scripts
 date: 2019-03-19
 ---
 
-# Writing Good Shell Scripts
-
 One of the typical tasks in system automation is writing scripts. Using the
 shell is a popular choice, given you're likely to already know it (since you
 interact with it every time you log in!) and also given its apparent simplicity.
