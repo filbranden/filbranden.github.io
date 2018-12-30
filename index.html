@@ -1,16 +1,8 @@
----
-layout: default
-title: Recent Posts
----
-
 <div>
-  <h1>Recent Posts</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
-      </li>
-    {% endfor %}
-  </ul>
+  <h1>About Me</h1>
+  <p>I'm a Linux plumber.</p>
+  <p>I'm a frequent contributor to the
+     <a href="https://github.com/systemd/systemd/">systemd</a> project.</p>
+  <p>I have a recent interest in web design, so I have been working on Jekyll
+     themes and CSS/JavaScript.</p>
 </div>
