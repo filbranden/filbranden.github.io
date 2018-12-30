@@ -1,1 +1,7 @@
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
 google_analytics: UA-116192858-1
