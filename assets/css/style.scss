@@ -8,6 +8,18 @@
     min-width: 1012px;
     word-wrap: break-word;
   }
+
+  #container {
+    /* from container-lg */
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+    /* from px-3 */
+    padding-right: 16px;
+    padding-left: 16px;
+    /* from mt-4 */
+    margin-top: 24px;
+  }
 }
 
 nav {
@@ -18,34 +30,48 @@ nav {
   height: 60px; /* TODO: Derive from contents. */
 }
 
-#container {
-  /* from container-lg */
-  max-width: 1012px;
-  margin-right: auto;
-  margin-left: auto;
-  /* from px-3 */
-  padding-right: 16px;
-  padding-left: 16px;
-  /* from mt-4 */
-  margin-top: 24px;
+@media screen and (min-width: 480px), not screen {
+  header {
+    /* from col-3 */
+    width: 25%;
+    /* from float-left */
+    float: left;
+    /* from pr-3 */
+    padding-right: 16px;
+  }
+
+  img#avatar {
+    width: 230px;
+    height: 230px;
+    /* from d-block */
+    display: block;
+    /* from rounded-2 */
+    border-radius: 6px;
+  }
 }
 
-header {
-  /* from col-3 */
-  width: 25%;
-  /* from float-left */
-  float: left;
-  /* from pr-3 */
-  padding-right: 16px;
-}
+@media screen and (max-width: 479px) {
+  header {
+    line-height: 1.5;
+    min-height: 140px;
+    overflow: visible;
+    padding: 15px 15px 10px 140px;
+    position: relative;
+  }
 
-img#avatar {
-  width: 230px;
-  height: 230px;
-  /* from d-block */
-  display: block;
-  /* from rounded-2 */
-  border-radius: 6px;
+  img#avatar {
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    margin-right: 15px;
+    line-height: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    vertical-align: middle;
+  }
 }
 
 .css-truncate {
@@ -75,6 +101,13 @@ h1#vcard-fullname {
   overflow: hidden;
 }
 
+@media screen and (max-width: 479px) {
+  h1#vcard-fullname {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
 #vcard-bio {
   /* from mb-3 */
   margin-bottom: 16px;
@@ -93,6 +126,13 @@ ul#vcard-details .css-truncate {
   width: 100%;
 }
 
+@media screen and (max-width: 479px) {
+  ul#vcard-details {
+    margin: 7.5px 0 0;
+    padding: 0;
+  }
+}
+
 .vcard-detail {
   padding-left: 22px;
   /* from pt-1 */
@@ -108,11 +148,21 @@ ul#vcard-details .css-truncate {
   width: 16px;
 }
 
-main {
-  /* from col-9 */
-  width: 75%;
-  /* from float-left */
-  float: left;
-  /* from pl-2 */
-  padding-left: 8px;
+@media screen and (min-width: 480px), not screen {
+  main {
+    /* from col-9 */
+    width: 75%;
+    /* from float-left */
+    float: left;
+    /* from pl-2 */
+    padding-left: 8px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  main {
+    background-color: #fff;
+    border-top: 1px solid #e1e4e8;
+    padding: 16px;
+  }
 }
