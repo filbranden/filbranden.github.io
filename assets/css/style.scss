@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-@media screen and (min-width: 768px), not screen {
+@media screen and (min-width: 480px), not screen {
   body {
     min-width: 1012px;
     word-wrap: break-word;
@@ -88,6 +88,11 @@ ul#vcard-details {
   margin-bottom: 16px !important;
 }
 
+ul#vcard-details .css-truncate {
+  max-width: 100%;
+  width: 100%;
+}
+
 .vcard-detail {
   padding-left: 22px;
   /* from pt-1 */
@@ -101,11 +106,6 @@ ul#vcard-details {
   margin-top: 3px;
   text-align: center;
   width: 16px;
-}
-
-.vcard-details .css-truncate {
-  max-width: 100%;
-  width: 100%;
 }
 
 main {
