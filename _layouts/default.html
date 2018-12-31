@@ -17,6 +17,13 @@
 
 <hr>
 
+<h1>Export ALL</h1>
+<pre>
+{{ site.github | jsonify }}
+</pre>
+
+<hr>
+
 {% for user in site.github.contributors %}
         <p><img src="{{ user.avatar_url }}" width="230" height="230" class="rounded-2"></p>
         <a href="{{ site.github.url }}"><h1>{{ user.name }}</h1></a>
