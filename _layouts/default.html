@@ -17,7 +17,7 @@
 
 <hr>
 
-{% for user in site.github.organization_members %}
+{% for user in site.github.contributors %}
         <p><img src="{{ user.avatar_url }}" width="230" height="230" class="rounded-2"></p>
         <a href="{{ site.github.url }}"><h1>{{ user.name }}</h1></a>
         <p>Location: {{ user.location }}<br>
