@@ -1,18 +1,9 @@
 ---
 ---
 
-/* Set font-family to reflect system fonts.
- * https://bitsofco.de/the-new-system-font-stack/
- */
-body {
-  font-family: -apple-system, 
-               BlinkMacSystemFont, 
-               "Segoe UI", 
-               Roboto, 
-               Helvetica,
-               Arial,
-               sans-serif,
-               "Apple Color Emoji",  /* Emojis*/
-               "Segoe UI Emoji", /* Emojis*/
-               "Segoe UI Symbol"; /* Emojis*/
+@import "{{ site.theme }}";
+
+/* Just to check if this will show up. */
+.filbranden {
+  color: red;
 }
