@@ -3,57 +3,116 @@
 
 @import "{{ site.theme }}";
 
-body {
+@media screen and (min-width: 768px), not screen {
+  body {
     min-width: 1012px;
     word-wrap: break-word;
+  }
 }
 
-.Header {
-    background-color: #24292e;
-    color: hsla(0, 0%, 100%, .75);
-    padding-bottom: 12px;
-    padding-top: 12px;
-    height: 60px; /* TODO: Derive from contents. */
+nav {
+  background-color: #24292e;
+  color: hsla(0, 0%, 100%, .75);
+  padding-bottom: 12px;
+  padding-top: 12px;
+  height: 60px; /* TODO: Derive from contents. */
+}
+
+#container {
+  /* from container-lg */
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+  /* from px-3 */
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+  /* from mt-4 */
+  margin-top: 24px !important;
+}
+
+header {
+  /* from col-3 */
+  width: 25%;
+  /* from float-left */
+  float: left !important;
+  /* from pr-3 */
+  padding-right: 16px !important;
+}
+
+img#avatar {
+  width: 230px;
+  height: 230px;
+  /* from d-block */
+  display: block !important;
+  /* from rounded-2 */
+  border-radius: 6px !important;
 }
 
 .css-truncate {
-    display: inline-block;
-    max-width: 125px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: top;
-    white-space: nowrap;
+  display: inline-block;
+  max-width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .octicon {
-    display: inline-block;
-    fill: currentColor;
-    vertical-align: text-bottom;
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
 }
 
-.vcard-fullname {
-    font-size: 26px;
-    line-height: 30px;
+h1#vcard-fullname {
+  font-size: 26px;
+  line-height: 30px;
+  /* from d-block */
+  display: block !important;
+  /* from py-3 */
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  /* from overflow-hidden */
+  overflow: hidden !important;
 }
 
-.vcard-details {
-    list-style: none;
+#vcard-bio {
+  /* from mb-3 */
+  margin-bottom: 16px !important;
+  /* from overflow-hidden */
+  overflow: hidden !important;
+}
+
+ul#vcard-details {
+  list-style: none;
+  /* from mb-3 */
+  margin-bottom: 16px !important;
 }
 
 .vcard-detail {
-    padding-left: 22px;
+  padding-left: 22px;
+  /* from pt-1 */
+  padding-top: 4px !important;
 }
 
 .vcard-detail .octicon {
-    color: #6a737d;
-    float: left;
-    margin-left: -22px;
-    margin-top: 3px;
-    text-align: center;
-    width: 16px;
+  color: #6a737d;
+  float: left;
+  margin-left: -22px;
+  margin-top: 3px;
+  text-align: center;
+  width: 16px;
 }
 
 .vcard-details .css-truncate {
-    max-width: 100%;
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+main {
+  /* from col-9 */
+  width: 75%;
+  /* from float-left */
+  float: left !important;
+  /* from pl-2 */
+  padding-left: 8px !important;
 }
