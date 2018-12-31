@@ -5,4 +5,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+sass:
+  style: expanded
 google_analytics: UA-116192858-1
