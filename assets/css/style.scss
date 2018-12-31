@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
+body {
+    min-width: 1012px;
+    word-wrap: break-word;
+}
+
 .Header {
     background-color: #24292e;
     color: hsla(0, 0%, 100%, .75);
