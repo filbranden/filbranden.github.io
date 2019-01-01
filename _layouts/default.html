@@ -15,7 +15,8 @@
     </div>
     <div>
       <form action="https://www.google.com/search" method="get">
-        <input type="text" name="q" placeholder="Search this website..." required>
+        <input type="hidden" name="q" value="site:{{ site.github.repository_name }}">
+        <input type="text" name="q" placeholder="Search..." required>
       </form>
     </div>
     <ul>

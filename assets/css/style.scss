@@ -42,6 +42,11 @@ nav a {
   color: #fff;
 }
 
+nav a:hover {
+  color: hsla(0,0%,100%,.75);
+  text-decoration: none;
+}
+
 nav ul {
   display: contents;
   list-style: none;
@@ -57,10 +62,12 @@ nav input {
   vertical-align: middle;
   font-size: 16px;
   font-weight: 400;
+  color: #fff;
   background-color: hsla(0,0%,100%,.125);
   border: none;
   border-radius: 3px;
   padding: 0 8px;
+  margin-left: -3px;
 }
 
 @media screen and (min-width: 480px), not screen {
