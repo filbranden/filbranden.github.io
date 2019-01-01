@@ -37,12 +37,14 @@ nav {
   font-weight: 600;
   font-size: 14px;
   padding: 13px 0;
+  width: 100%;
   overflow: auto;
   white-space: nowrap;
 }
 
-nav div {
+nav div, nav li {
   margin-left: 16px;
+  margin-right: 16px;
 }
 
 nav a {
@@ -57,10 +59,6 @@ nav a:hover {
 nav ul {
   display: contents;
   list-style: none;
-}
-
-nav li {
-  margin-left: 16px;
 }
 
 nav input {
