@@ -25,7 +25,7 @@
 nav {
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
   background-color: #24292e;
   color: #fff;
   font-weight: 600;
@@ -38,19 +38,20 @@ nav div {
   margin-left: 16px;
 }
 
-nav > a {
+nav a {
   color: #fff;
 }
 
 nav ul {
+  display: contents;
   list-style: none;
 }
 
-nav > li {
+nav li {
   margin-left: 16px;
 }
 
-nav > input {
+nav input {
   width: 300px;
   min-height: 30px;
   vertical-align: middle;
