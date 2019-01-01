@@ -31,6 +31,19 @@ nav {
   height: 60px; /* TODO: Derive from contents. */
 }
 
+nav > a {
+  color: hsla(0, 0%, 100%, .75);
+}
+
+nav > a:hover {
+  color: hsla(0, 0%, 100%, .75);
+}
+
+nav > a:visited {
+  color: hsla(0, 0%, 100%, .75);
+}
+
+
 @media screen and (min-width: 480px), not screen {
   header {
     /* from col-3 */
