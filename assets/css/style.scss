@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .skip-on-mobile {
+    display: none;
+  }
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
