@@ -54,6 +54,11 @@
   .collapsed #arrow-down {
     display: none;
   }
+
+  /* Start with header collapsed, on mobile */
+  header {
+    display: none;
+  }
 }
 
 nav {
