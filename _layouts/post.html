@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+<p>{{ page.date | date_to_string }} - By {{ page.author | default: "filbranden" }}</p>
+
+{{ content }}
