@@ -260,3 +260,11 @@ ul#vcard-details .css-truncate {
     padding: 16px;
   }
 }
+
+a.anchorjs-link {
+  color: inherit;
+}
+
+a.anchorjs-link:hover {
+  text-decoration: none;
+}
