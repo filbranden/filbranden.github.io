@@ -19,7 +19,11 @@
         <input type="text" name="q" placeholder="Search..." required>
       </form>
     </div>
-    <div id="mobile-toggle" class="{% if layout.octocopycat.mobile_header_expanded or page.octocopycat.mobile_header_expanded %}expanded{% endif %}{% unless layout.octocopycat.mobile_header_expanded or page.octocopycat.mobile_header_expanded %}collapsed{% endunless %}">
+{% assign toggle_class = "collapsed" %}
+{% if layout.octocopycat.mobile_header_expanded or page.octocopycat.mobile_header_expanded %}
+{% assign toggle_class = "expanded" %}
+{% endif %}
+    <div id="mobile-toggle" class="{{ toggle_class }}">
       <svg id="arrow-down" class="octicon" viewBox="0 0 8 8" version="1.1" width="32" height="32"><path fill-rule="evenodd" d="m 6 2 l -2 4 l -2 -4 l 4 0 z"></path></svg>
       <img id="small-avatar" src="{{ site.github.owner_gravatar_url }}" alt="">
     </div>
@@ -31,7 +35,7 @@
   </nav>
 
   <div id="container" class="clearfix">
-    <header{% unless layout.octocopycat.mobile_header_expanded or page.octocopycat.mobile_header_expanded %} class="collapsed"{% endunless %}>
+    <header class="{{ toggle_class }}">
       <img id="avatar" src="{{ site.github.owner_gravatar_url }}" alt="">
       <h1 id="vcard-fullname">{{ site.owner_name }}</h1>
       <div id="vcard-bio">{{ site.owner_bio }}</div>
