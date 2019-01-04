@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: 479px) {
-  .skip-on-mobile {
+  #home-icon, #search-box {
     display: none;
   }
 
@@ -47,10 +47,6 @@
 
   .collapsed #arrow-down {
     display: none;
-  }
-
-  header.expanded {
-    display: block;
   }
 
   header.collapsed {

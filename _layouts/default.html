@@ -10,10 +10,10 @@
 <body>
 
   <nav>
-    <div id="home-icon" class="skip-on-mobile">
+    <div id="home-icon">
       <a href="/"><svg class="octicon" width="32" height="32"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#home-icon' | relative_url }}"></use></svg></a>
     </div>
-    <div class="skip-on-mobile">
+    <div id="search-box">
       <form action="https://www.google.com/search" method="get">
         <input type="hidden" name="q" value="site:{{ site.github.repository_name }}">
         <input type="text" name="q" placeholder="Search..." required>
