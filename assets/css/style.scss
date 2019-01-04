@@ -73,6 +73,11 @@ nav {
   padding-bottom: 4px;
 }
 
+#home-icon svg.octicon {
+  width: 32px;
+  height: 32px;
+}
+
 nav div, nav li {
   padding-right: 16px;
 }
@@ -222,6 +227,7 @@ ul#vcard-details .css-truncate {
   margin-top: 3px;
   text-align: center;
   width: 16px;
+  height: 16px;
 }
 
 @media screen and (min-width: 480px), not screen {

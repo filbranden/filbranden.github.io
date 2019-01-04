@@ -11,7 +11,7 @@
 
   <nav>
     <div id="home-icon">
-      <a href="/"><svg class="octicon" width="32" height="32"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#home-icon' | relative_url }}"></use></svg></a>
+      <a href="/"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#home-icon' | relative_url }}"></use></svg></a>
     </div>
     <div id="search-box">
       <form action="https://www.google.com/search" method="get">
@@ -24,7 +24,7 @@
 {% assign toggle_class = "expanded" %}
 {% endif %}
     <div id="mobile-toggle" class="{{ toggle_class }}">
-      <svg id="arrow-down" class="octicon" width="32" height="32"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#home-arrow-down' | relative_url }}"></use></svg>
+      <svg id="arrow-down" class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#home-arrow-down' | relative_url }}"></use></svg>
       <img id="small-avatar" src="{{ site.github.owner_gravatar_url }}" alt="">
     </div>
     <ul>
@@ -40,18 +40,18 @@
       <h1 id="vcard-fullname">{{ site.owner_name }}</h1>
       <div id="vcard-bio">{{ site.owner_bio }}</div>
       <ul id="vcard-details">
-        <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-github-icon' | relative_url }}"></use></svg>
+        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-github-icon' | relative_url }}"></use></svg>
           <a href="{{ site.github.owner_url }}">@{{ site.github.owner_name }}</a></li>
 {% if site.owner_company %}
-        <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-company-icon' | relative_url }}"></use></svg>
+        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-company-icon' | relative_url }}"></use></svg>
           {{ site.owner_company }}</li>
 {% endif %}
 {% if site.owner_location %}
-        <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-location-icon' | relative_url }}"></use></svg>
+        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-location-icon' | relative_url }}"></use></svg>
           {{ site.owner_location }}</li>
 {% endif %}
 {% if site.owner_email %}
-        <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-email-icon' | relative_url }}"></use></svg>
+        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-email-icon' | relative_url }}"></use></svg>
           <a href="mailto:{{ site.owner_email }}">{{ site.owner_email }}</a></li>
 {% endif %}
       </ul>
