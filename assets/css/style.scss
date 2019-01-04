@@ -32,14 +32,8 @@
   }
 
   #arrow-down, #small-avatar {
+    display: block;
     width: 24px;
-    height: 24px;
-  }
-
-  #mobile-toggle {
-    /* TODO: Understand why this height is
-     * 26px on #arrow-down and 29px on #small-avatar.
-     */
     height: 24px;
   }
 
@@ -55,11 +49,11 @@
     display: none;
   }
 
-  .expanded header {
+  header.expanded {
     display: block;
   }
 
-  .collapsed header {
+  header.collapsed {
     display: none;
   }
 }
