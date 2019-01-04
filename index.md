@@ -1,18 +1,18 @@
 ---
 ---
 
-# Projects
+## Projects
 
 These are projects I am an active maintainer for:
 
 * [systemd](https://github.com/systemd/systemd/)
 * [numactl](https://github.com/numactl/numactl/)
 
-# Work in Progress
+## Work in Progress
 
 These are some of the recent ideas I have been working on:
 
-## git-rpmbuild
+### git-rpmbuild
 
 Build an RPM package from a git working tree. I started exploring using
 `rpmbuild --build-in-place` to build an RPM package from a developer tree, to
@@ -26,7 +26,7 @@ time: [selinux-policy](https://github.com/fedora-selinux/selinux-policy).
 But that one is pretty tricky since the build happens in-tree and the same
 tree is build three times for each separate policy. 😞
 
-## Octocopycat
+### Octocopycat
 
 While planning to build this website, I wanted to make it look and feel quite a
 bit like GitHub itself, since I like GitHub's interface so much and this
