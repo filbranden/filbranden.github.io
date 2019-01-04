@@ -1,5 +1,7 @@
 ---
 title: About filbranden
+octocopycat:
+  mobile_header_expanded: true
 ---
 
 ## About Me

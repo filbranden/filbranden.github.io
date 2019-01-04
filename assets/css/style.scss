@@ -55,8 +55,11 @@
     display: none;
   }
 
-  /* Start with header collapsed, on mobile */
-  header {
+  .expanded header {
+    display: block;
+  }
+
+  .collapsed header {
     display: none;
   }
 }

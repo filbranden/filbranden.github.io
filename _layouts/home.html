@@ -1,5 +1,7 @@
 ---
 layout: default
+octocopycat:
+  mobile_header_expanded: true
 ---
 
 <h1>No place like Home!</h1>
@@ -7,14 +9,3 @@ layout: default
 {{ content }}
 
 <p><small>And something here, for good measure...</small></p>
-
-<script>
-// Expand header on home page.
-(function(d) {
-  var mobileToggle = d.getElementById("mobile-toggle");
-  var header = d.getElementsByTagName("header")[0];
-  mobileToggle.classList.remove("collapsed");
-  mobileToggle.classList.add("expanded");
-  header.style.display = "block";
-})(document);
-</script>

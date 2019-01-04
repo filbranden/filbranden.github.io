@@ -19,7 +19,7 @@
         <input type="text" name="q" placeholder="Search..." required>
       </form>
     </div>
-    <div id="mobile-toggle" class="collapsed">
+    <div id="mobile-toggle"{% unless layout.octocopycat.mobile_header_expanded or page.octocopycat.mobile_header_expanded %} style="collapsed"{% endunless %}>
       <svg id="arrow-down" class="octicon" viewBox="0 0 8 8" version="1.1" width="32" height="32"><path fill-rule="evenodd" d="m 6 2 l -2 4 l -2 -4 l 4 0 z"></path></svg>
       <img id="small-avatar" src="{{ site.github.owner_gravatar_url }}" alt="">
     </div>
@@ -31,7 +31,7 @@
   </nav>
 
   <div id="container" class="clearfix">
-    <header>
+    <header{% unless layout.octocopycat.mobile_header_expanded or page.octocopycat.mobile_header_expanded %} style="collapsed"{% endunless %}>
       <img id="avatar" src="{{ site.github.owner_gravatar_url }}" alt="">
       <h1 id="vcard-fullname">{{ site.owner_name }}</h1>
       <div id="vcard-bio">{{ site.owner_bio }}</div>
@@ -55,11 +55,13 @@
     if (this.classList.contains("collapsed")) {
       this.classList.remove("collapsed");
       this.classList.add("expanded");
-      header.style.display = "block";
+      header.classList.remove("collapsed");
+      header.classList.add("expanded");
     } else {
       this.classList.remove("expanded");
       this.classList.add("collapsed");
-      header.style.display = "none";
+      header.classList.remove("expanded");
+      header.classList.add("collapsed");
     }
   })
 })(document);
