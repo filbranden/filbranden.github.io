@@ -32,7 +32,6 @@
   }
 
   #arrow-down, #small-avatar {
-    display: block;
     width: 24px;
     height: 24px;
   }
@@ -41,12 +40,20 @@
     border-radius: 3px;
   }
 
+  .collapsed #small-avatar {
+    display: block;
+  }
+
   .expanded #small-avatar {
     display: none;
   }
 
   .collapsed #arrow-down {
     display: none;
+  }
+
+  .expanded #arrow-down {
+    display: block;
   }
 
   header.expanded {
