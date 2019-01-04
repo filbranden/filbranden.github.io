@@ -42,12 +42,18 @@
       <ul id="vcard-details">
         <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-github-icon' | relative_url }}"></use></svg>
           <a href="{{ site.github.owner_url }}">@{{ site.github.owner_name }}</a></li>
+{% if site.owner_company %}
         <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-company-icon' | relative_url }}"></use></svg>
           {{ site.owner_company }}</li>
+{% endif %}
+{% if site.owner_location %}
         <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-location-icon' | relative_url }}"></use></svg>
           {{ site.owner_location }}</li>
+{% endif %}
+{% if site.owner_email %}
         <li class="vcard-detail css-truncate"><svg class="octicon" width="16" height="16"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-email-icon' | relative_url }}"></use></svg>
           <a href="mailto:{{ site.owner_email }}">{{ site.owner_email }}</a></li>
+{% endif %}
       </ul>
     </header>
 
