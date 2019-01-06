@@ -37,24 +37,26 @@
   <div id="container" class="clearfix">
     <header class="{{ toggle_class }}">
       <img id="avatar" src="{{ site.github.owner_gravatar_url }}" alt="">
-      <h1 id="vcard-fullname">{{ site.owner_name }}</h1>
-      <div id="vcard-bio">{{ site.owner_bio }}</div>
-      <ul id="vcard-details">
-        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-github-icon' | relative_url }}"></use></svg>
-          <a href="{{ site.github.owner_url }}">@{{ site.github.owner_name }}</a></li>
-{% if site.owner_company %}
-        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-company-icon' | relative_url }}"></use></svg>
-          {{ site.owner_company }}</li>
-{% endif %}
-{% if site.owner_location %}
-        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-location-icon' | relative_url }}"></use></svg>
-          {{ site.owner_location }}</li>
-{% endif %}
-{% if site.owner_email %}
-        <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-email-icon' | relative_url }}"></use></svg>
-          <a href="mailto:{{ site.owner_email }}">{{ site.owner_email }}</a></li>
-{% endif %}
-      </ul>
+      <div id="vcard-div">
+        <h1 id="vcard-fullname">{{ site.owner_name }}</h1>
+        <div id="vcard-bio">{{ site.owner_bio }}</div>
+        <ul id="vcard-details">
+          <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-github-icon' | relative_url }}"></use></svg>
+            <a href="{{ site.github.owner_url }}">@{{ site.github.owner_name }}</a></li>
+  {% if site.owner_company %}
+          <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-company-icon' | relative_url }}"></use></svg>
+            {{ site.owner_company }}</li>
+  {% endif %}
+  {% if site.owner_location %}
+          <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-location-icon' | relative_url }}"></use></svg>
+            {{ site.owner_location }}</li>
+  {% endif %}
+  {% if site.owner_email %}
+          <li class="vcard-detail css-truncate"><svg class="octicon"><use xlink:href="{{ '/assets/img/octocopycat-icons.svg#vcard-email-icon' | relative_url }}"></use></svg>
+            <a href="mailto:{{ site.owner_email }}">{{ site.owner_email }}</a></li>
+  {% endif %}
+        </ul>
+      </div>
     </header>
 
     <script>
