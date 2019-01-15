@@ -21,3 +21,7 @@ octocopycat:
     bio: Linux Plumber 👨‍🔧
     email: filbranden@gmail.com
 
+  favicon32: /assets/img/favicon-32x32.png
+  favicon16: /assets/img/favicon-16x16.png
+  favicon192: /assets/img/favicon-192x192.png
+
