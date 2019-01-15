@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-nav {
+#occ-nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,47 +17,47 @@ nav {
   white-space: nowrap;
 }
 
-#home-icon {
-  padding-right: 13px;
-  padding-bottom: 4px;
-}
-
-#home-icon svg.octicon {
-  width: 32px;
-  height: 32px;
-}
-
-nav div, nav li {
-  padding-right: 16px;
-}
-
-nav a {
+#occ-nav a {
   color: #fff;
 }
 
-nav a:hover {
-  color: hsla(0,0%,100%,.75);
+#occ-nav a:hover {
+  color: hsla(0, 0%, 100%, .75);
   text-decoration: none;
 }
 
-nav ul {
+#occ-nav ul {
   display: contents;
   list-style: none;
 }
 
-nav input {
+#occ-nav div, #occ-nav li {
+  padding-right: 16px;
+}
+
+#occ-home-div {
+  padding-right: 13px;
+  padding-bottom: 4px;
+}
+
+#occ-home-img {
+  width: 32px;
+  height: 32px;
+}
+
+#occ-search-box {
   width: 300px;
   min-height: 30px;
   font-size: 13px;
   font-weight: 400;
   color: #fff;
-  background-color: hsla(0,0%,100%,.125);
+  background-color: hsla(0, 0%, 100%, .125);
   border: none;
   border-radius: 3px;
   padding: 0 8px;
 }
 
-.css-truncate {
+.occ-truncate {
   display: inline-block;
   max-width: 125px;
   overflow: hidden;
@@ -66,40 +66,31 @@ nav input {
   white-space: nowrap;
 }
 
-.octicon {
+.occ-icon-svg {
   display: block;
   fill: currentColor;
   vertical-align: text-bottom;
 }
 
-h1#vcard-fullname {
-  /* from d-block */
+#occ-vcard-fullname {
   display: block;
-  /* from overflow-hidden */
-  overflow: hidden;
 }
 
-#vcard-bio {
-  /* from overflow-hidden */
-  overflow: hidden;
-}
-
-ul#vcard-details {
+#occ-vcard-details {
   list-style: none;
-  /* from mb-3 */
   margin-bottom: 16px;
 }
 
-ul#vcard-details .css-truncate {
+#occ-vcard-details .occ-truncate {
   max-width: 100%;
   width: 100%;
 }
 
-.vcard-detail {
+#occ-vcard-details li {
   padding-left: 22px;
 }
 
-.vcard-detail .octicon {
+#occ-vcard-details .occ-icon-svg {
   color: #6a737d;
   float: left;
   margin-left: -22px;
@@ -109,6 +100,7 @@ ul#vcard-details .css-truncate {
   height: 16px;
 }
 
+/* Customize color and decoration of anchorjs links */
 a.anchorjs-link {
   color: inherit;
 }
@@ -118,125 +110,88 @@ a.anchorjs-link:hover {
 }
 
 @media screen and (min-width: 480px), not screen {
+  /* Styles for Desktop site */
+
   body {
     min-width: 1012px;
     word-wrap: break-word;
   }
 
-  #container {
-    /* from container-lg */
-    max-width: 1012px;
-    margin-right: auto;
-    margin-left: auto;
-    /* from px-3 */
-    padding-right: 16px;
-    padding-left: 16px;
-    /* from mt-4 */
-    margin-top: 24px;
-  }
-
-  #mobile-toggle {
+  #occ-toggle-div {
+    /* Hide toggle on desktop, meant for mobile. */
     display: none;
   }
 
-  header {
-    /* from col-3 */
+  #occ-container {
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 16px;
+    margin-top: 24px;
+  }
+
+  #occ-header {
     width: 25%;
-    /* from float-left */
     float: left;
-    /* from pr-3 */
     padding-right: 16px;
   }
 
-  img#avatar {
+  #occ-avatar-img {
     width: 230px;
     height: 230px;
-    /* from d-block */
     display: block;
-    /* from rounded-2 */
     border-radius: 6px;
   }
 
-  h1#vcard-fullname {
+  #occ-vcard-fullname {
     font-size: 26px;
     line-height: 30px;
-    /* from py-3 */
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
-  #vcard-bio {
-    /* from mb-3 */
+  #occ-vcard-bio {
     margin-bottom: 16px;
   }
 
-  .vcard-detail {
-    /* from pt-1 */
+  #occ-vcard-details li {
     padding-top: 4px;
   }
 
-  main {
-    /* from col-9 */
+  #occ-main {
     width: 75%;
-    /* from float-left */
     float: left;
-    /* from pl-2 */
     padding-left: 8px;
   }
 }
 
-
 @media screen and (max-width: 479px) {
-  ul#vcard-details {
-    margin: 7.5px 0 0;
-    padding: 0;
-  }
+  /* Styles for Mobile site */
 
-  .vcard-detail {
-    font-size: 12px;
-    line-height: 1.8;
-    margin-bottom: 0;
-  }
-
-  main {
-    background-color: #fff;
-    border-top: 1px solid #e1e4e8;
-    padding: 16px;
-  }
-
-  h1#vcard-fullname {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  #home-icon, #search-box {
+  #occ-home-div, #occ-search-div {
+    /* Hide home and search box on mobile, meant for desktop. */
     display: none;
   }
 
-  #arrow-down, #small-avatar {
+  #occ-toggle-arrow-img, #occ-toggle-avatar-img {
     display: block;
     width: 24px;
     height: 24px;
   }
 
-  #small-avatar {
+  #occ-toggle-avatar-img {
     border-radius: 3px;
   }
 
-  .expanded #small-avatar {
+  .occ-toggle-expanded #occ-toggle-avatar-img {
     display: none;
   }
 
-  .collapsed #arrow-down {
+  .occ-toggle-collapsed #occ-toggle-arrow-img {
     display: none;
   }
 
-  header.collapsed {
-    display: none;
-  }
-
-  header {
+  #occ-header {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -244,7 +199,11 @@ a.anchorjs-link:hover {
     background-color: #fafbfc;
   }
 
-  img#avatar {
+  #occ-header.occ-toggle-collapsed {
+    display: none;
+  }
+
+  #occ-avatar-img {
     flex: 0 0 110px;
     width: 110px;
     height: 110px;
@@ -253,9 +212,32 @@ a.anchorjs-link:hover {
     border-radius: 3px;
   }
 
-  div#vcard-div {
+  #occ-vcard-div {
     flex: 0 0 auto;
     line-height: 1.5;
     overflow: visible;
+  }
+
+  #occ-vcard-fullname {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  #occ-vcard-details {
+    margin: 7.5px 0 0;
+    padding: 0;
+  }
+
+  #occ-vcard-details li {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 0;
+  }
+
+  #occ-main {
+    background-color: #fff;
+    border-top: 1px solid #e1e4e8;
+    padding: 16px;
   }
 }
