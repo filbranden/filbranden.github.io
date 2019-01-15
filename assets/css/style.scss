@@ -3,57 +3,6 @@
 
 @import "{{ site.theme }}";
 
-@media screen and (min-width: 480px), not screen {
-  body {
-    min-width: 1012px;
-    word-wrap: break-word;
-  }
-
-  #container {
-    /* from container-lg */
-    max-width: 1012px;
-    margin-right: auto;
-    margin-left: auto;
-    /* from px-3 */
-    padding-right: 16px;
-    padding-left: 16px;
-    /* from mt-4 */
-    margin-top: 24px;
-  }
-
-  #mobile-toggle {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  #home-icon, #search-box {
-    display: none;
-  }
-
-  #arrow-down, #small-avatar {
-    display: block;
-    width: 24px;
-    height: 24px;
-  }
-
-  #small-avatar {
-    border-radius: 3px;
-  }
-
-  .expanded #small-avatar {
-    display: none;
-  }
-
-  .collapsed #arrow-down {
-    display: none;
-  }
-
-  header.collapsed {
-    display: none;
-  }
-}
-
 nav {
   display: flex;
   justify-content: flex-start;
@@ -108,51 +57,6 @@ nav input {
   padding: 0 8px;
 }
 
-@media screen and (min-width: 480px), not screen {
-  header {
-    /* from col-3 */
-    width: 25%;
-    /* from float-left */
-    float: left;
-    /* from pr-3 */
-    padding-right: 16px;
-  }
-
-  img#avatar {
-    width: 230px;
-    height: 230px;
-    /* from d-block */
-    display: block;
-    /* from rounded-2 */
-    border-radius: 6px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 15px 15px 10px 15px;
-    background-color: #fafbfc;
-  }
-
-  img#avatar {
-    flex: 0 0 110px;
-    width: 110px;
-    height: 110px;
-    display: block;
-    margin-right: 15px;
-    border-radius: 3px;
-  }
-
-  div#vcard-div {
-    flex: 0 0 auto;
-    line-height: 1.5;
-    overflow: visible;
-  }
-}
-
 .css-truncate {
   display: inline-block;
   max-width: 125px;
@@ -175,34 +79,9 @@ h1#vcard-fullname {
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px), not screen {
-  h1#vcard-fullname {
-    font-size: 26px;
-    line-height: 30px;
-    /* from py-3 */
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  h1#vcard-fullname {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  }
-}
-
 #vcard-bio {
   /* from overflow-hidden */
   overflow: hidden;
-}
-
-@media screen and (min-width: 480px), not screen {
-  #vcard-bio {
-    /* from mb-3 */
-    margin-bottom: 16px;
-  }
 }
 
 ul#vcard-details {
@@ -230,12 +109,82 @@ ul#vcard-details .css-truncate {
   height: 16px;
 }
 
+a.anchorjs-link {
+  color: inherit;
+}
+
+a.anchorjs-link:hover {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 480px), not screen {
+  body {
+    min-width: 1012px;
+    word-wrap: break-word;
+  }
+
+  #container {
+    /* from container-lg */
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+    /* from px-3 */
+    padding-right: 16px;
+    padding-left: 16px;
+    /* from mt-4 */
+    margin-top: 24px;
+  }
+
+  #mobile-toggle {
+    display: none;
+  }
+
+  header {
+    /* from col-3 */
+    width: 25%;
+    /* from float-left */
+    float: left;
+    /* from pr-3 */
+    padding-right: 16px;
+  }
+
+  img#avatar {
+    width: 230px;
+    height: 230px;
+    /* from d-block */
+    display: block;
+    /* from rounded-2 */
+    border-radius: 6px;
+  }
+
+  h1#vcard-fullname {
+    font-size: 26px;
+    line-height: 30px;
+    /* from py-3 */
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  #vcard-bio {
+    /* from mb-3 */
+    margin-bottom: 16px;
+  }
+
   .vcard-detail {
     /* from pt-1 */
     padding-top: 4px;
   }
+
+  main {
+    /* from col-9 */
+    width: 75%;
+    /* from float-left */
+    float: left;
+    /* from pl-2 */
+    padding-left: 8px;
+  }
 }
+
 
 @media screen and (max-width: 479px) {
   ul#vcard-details {
@@ -248,31 +197,65 @@ ul#vcard-details .css-truncate {
     line-height: 1.8;
     margin-bottom: 0;
   }
-}
 
-@media screen and (min-width: 480px), not screen {
-  main {
-    /* from col-9 */
-    width: 75%;
-    /* from float-left */
-    float: left;
-    /* from pl-2 */
-    padding-left: 8px;
-  }
-}
-
-@media screen and (max-width: 479px) {
   main {
     background-color: #fff;
     border-top: 1px solid #e1e4e8;
     padding: 16px;
   }
-}
 
-a.anchorjs-link {
-  color: inherit;
-}
+  h1#vcard-fullname {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
 
-a.anchorjs-link:hover {
-  text-decoration: none;
+  #home-icon, #search-box {
+    display: none;
+  }
+
+  #arrow-down, #small-avatar {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  #small-avatar {
+    border-radius: 3px;
+  }
+
+  .expanded #small-avatar {
+    display: none;
+  }
+
+  .collapsed #arrow-down {
+    display: none;
+  }
+
+  header.collapsed {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 15px 10px 15px;
+    background-color: #fafbfc;
+  }
+
+  img#avatar {
+    flex: 0 0 110px;
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin-right: 15px;
+    border-radius: 3px;
+  }
+
+  div#vcard-div {
+    flex: 0 0 auto;
+    line-height: 1.5;
+    overflow: visible;
+  }
 }
