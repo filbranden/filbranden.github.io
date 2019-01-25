@@ -1,10 +1,8 @@
 ---
-title: About filbranden
+title: About Me
 octocopycat:
   toggle_header: expanded
 ---
-
-## About Me
 
 I'm just a Linux Plumber 👨‍🔧. I really enjoy the plumbing it takes to
 create a rich userspace starting from the low-level Linux kernel APIs.
