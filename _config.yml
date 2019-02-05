@@ -15,10 +15,6 @@ octocopycat:
     url: /about.html
 
   vcard:
-    fullname: Filipe Brandenburger
-    location: United States
-    company: Google
-    bio: Linux Plumber 👨‍🔧
     email: filbranden@gmail.com
 
   social_links:
