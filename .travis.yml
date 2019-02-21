@@ -1,4 +1,10 @@
+dist: xenial
 language: ruby
 rvm:
 - 2.5
-script: "bundle exec jekyll build"
+before_install: |
+  { echo "source 'https://rubygems.org'";
+    echo "gem 'github-pages', group: :jekyll_plugins";
+  } >Gemfile
+script:
+- bundle exec jekyll build
