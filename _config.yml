@@ -1,4 +1,8 @@
 
+exclude:
+- README.md
+- LICENSE.txt
+
 sass:
   style: expanded
 
